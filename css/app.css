@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--text);
+}
+
+/* css variable */
+:root{
+    --primary:#c2fc9244;
+    --secondary: gray;
+    --text:black;
+    --white: #fff;
+    --black: #121010;
+    --btn:  #5e5858;
+}
+
+.logo-design {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow:2px 5px 6px pink;
+    -webkit-text-stroke: 2px #5d6544;
+    transition: all 1s;
+    display:inline-block;
+
+}
+
+.logo-design:hover {
+    transform: rotate(180deg);
+}
+
+span {
+    color:var(--black);
+}
+
+.a {
+    color:lightgreen;
+    font-size: 1.5rem ;
+    font-weight: bolder;
+}
+
+.b {
+     color:lightcoral;
+     font-size: 2rem;
+}
+
+.c {
+    color:rgb(50, 169, 205);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.nav-items{
+    display:flex;
+    gap:20px;
+}
+
+.nav-items a {
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+    background-color: var(--btn);
+    color:var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap:20px;
+}
+
+.active {
+     background-color: var(--btn);
+     color: var(--white);
+}
+
+.menu-icon {
+    cursor: pointer;
+    display:none;
+}
