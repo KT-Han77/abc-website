@@ -98,3 +98,68 @@ nav {
     cursor: pointer;
     display:none;
 }
+
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background: url(../photos/mount.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    /* background: white; */
+    top:50px;
+    left:200px;
+    background-image: url(../photos/John-Deere-Boys-Graphic-Fleece-Long-Sleeve-Hoodie-Sizes-4-18_9ffd561a-5693-4d17-86e7-529ae013e4a2.972a0d0bf9af4631120b77c1fbbcfcd8.jpeg);
+
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    top:100px;
+    right:500px;
+    z-index: 200;
+}
+
+.circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    top: 60%;
+    right: 60%;
+}
+
+.circle4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    background: white;
+    top: 70%;
+    left: 60%;
+}
+
+.hero-content {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.375);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}

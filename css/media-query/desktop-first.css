@@ -15,7 +15,8 @@
         flex-direction: column;
         align-items: center;
         border-radius: 0 0 50px 0;
-         transform:scale(0);
+        /* transform:scale(0); */
+        transform:translateY(-300%);
         transition: all 0.5s ease-in-out;
         transform-origin: right;
         opacity:0;
@@ -32,14 +33,31 @@
         flex-direction: column;
         align-items: center;
         border-radius: 0 0 0 50px;
-        transform:scale(0);
+        /* transform:scale(0); */
+        transform:translateX(-300%);
         transition: all 0.5s ease-in-out;
-        transform-origin: left;
+        transform-origin: top right;
         opacity:0;
     }
 
     .show{
-        transform:scale(1);
+        /* transform:scale(1); */
+        transform:translateX(0);
         opacity: 1;
     }
+
+    .hero-content {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .circle {
+       display:none
+    }
+
+    .circle1 {
+        display: block;
+    }
+
 }
