@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--text);
+}
+
+/* css variable */
+:root{
+    --primary:#c2fc9244;
+    --secondary: gray;
+    --text:black;
+    --white: #fff;
+    --black: #121010;
+    --btn:  #5e5858;
+}
+
+.logo-design {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow:2px 5px 6px pink;
+    -webkit-text-stroke: 2px #5d6544;
+    transition: all 1s;
+    display:inline-block;
+}
+
+.logo-design:hover {
+    transform: rotate(180deg);
+}
+
+span {
+    color:var(--black);
+}
+
+.a {
+    color:rgba(0, 0, 255, 0.486);
+    font-size: 1.5rem ;
+    font-weight: bolder;
+}
+
+.b {
+     color:lightcoral;
+     font-size: 2rem;
+}
+
+.c {
+    color:rgb(50, 169, 205);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.nav-items{
+    display:flex;
+    gap:20px;
+    z-index: 1000;
+}
+
+.nav-items a {
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+    background-color: var(--btn);
+    color:var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap:20px;
+    z-index:1000;
+}
+
+.active {
+     background-color: var(--btn);
+     color: var(--white);
+}
+
+.menu-icon {
+    cursor: pointer;
+    display:none;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background: url(../photos/mount.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.circle {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    /* background: white; */
+    top:50px;
+    left:200px;
+    background-image: url(../photos/John-Deere-Boys-Graphic-Fleece-Long-Sleeve-Hoodie-Sizes-4-18_9ffd561a-5693-4d17-86e7-529ae013e4a2.972a0d0bf9af4631120b77c1fbbcfcd8.jpeg);
+
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    top:100px;
+    right:500px;
+    z-index: 200;
+}
+
+.circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    top: 60%;
+    right: 60%;
+}
+
+.circle4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    background: white;
+    top: 70%;
+    left: 60%;
+}
+
+.hero-content {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.375);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+/* carousel */
+.fashion-carousel {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 33.333%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.season-text {
+  font-family: 'Cursive', cursive;
+  font-size: 2rem;
+  color: #4a90e2;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+
+.main-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.discount-text {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+}
+
+.btn-secondary:hover {
+  background-color: #4a90e2;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.prev-arrow {
+  left: 20px;
+}
+
+.next-arrow {
+  right: 20px;
+}
+
+.carousel-arrow:hover {
+  background-color: #4a90e2;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Dots Indicator */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #4a90e2;
+  transform: scale(1.2);
+}
+
+
+/*service - item*/
+.service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns equally spaced */
+  grid-gap: 20px; /* space between items */
+  padding: 40px 100px;
+  background-color: #eee;
+  text-align: center;
+  /* place-items: center; */   /* grid မှာသုံး child ၁ခု ထဲမှ ရမယ်*/
+}
+
+.service-item {
+  background: #fff;
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  gap:10px;
+}
+
+.service-text {
+  /* background: purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  gap:10px;
+}
+
+.service-item img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.service-item h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+.service-image{
+  display:grid;
+  place-items: center;  /* grid မှာသုံး child ၁ခု ထဲမှ ရမယ်*/
+}
+
+.service-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.discount-section {
+  width: 100%;
+  height: 500px;
+  background: purple;
+  display: flex;
+  gap:30px;
+  padding:30px;
+}
+
+.discount-left,.discount-right{
+  flex:1;
+}
+
+.discount-left{
+  background: url(../photos/flowergirl.jpg);
+  background-size: cover;
+  /* background-position:30% 50%; */
+  display:flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-right: 30px;
+
+}
+
+.discount-content{
+  background: rgba(250, 128, 114, 0.29);
+  width:40%;
+  height: 220px;
+  display:flex;
+  flex-direction: column;
+  gap: 20px ;
+  backdrop-filter: blur(5px);
+  padding:30px;
+}
+
+.discount-right {
+  background: yellow;
+}

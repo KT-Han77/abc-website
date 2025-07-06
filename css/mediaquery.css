@@ -1,0 +1,363 @@
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 12px;
+    height: auto;
+  }
+
+  nav img {
+    width: 70px;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-user-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-user-info a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav-user-info img {
+    width: 22px;
+  }
+
+  .carousel-container {
+    height: auto;
+  }
+
+  .slide-content {
+    flex-direction: column;
+    padding: 25px 15px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .season-text {
+    font-size: 1.3rem;
+  }
+
+  .discount-text {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 90%;
+    max-width: 220px;
+    padding: 12px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+
+  .carousel-arrow {
+    bottom: 60px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .carousel-dots {
+    bottom: 16px;
+  }
+
+  .dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .service-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-text p {
+    font-size: 0.95rem;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+    border-radius: 0 0 20px 20px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-user-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav-user-info a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav-user-info img {
+    width: 24px;
+    margin-bottom: 5px;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    height: auto;
+  }
+
+  .slide-content {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+
+  .season-text {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+  .main-title {
+    font-size: 2.3rem;
+    color: var(--black);
+  }
+
+  .discount-text {
+    font-size: 1.1rem;
+    color: #777;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 90%;
+    max-width: 260px;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  /* Carousel Arrows */
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    top: unset;
+    bottom: 60px;
+    background-color: #f8f8f8;
+  }
+
+  .prev-arrow {
+    left: 15px;
+  }
+
+  .next-arrow {
+    right: 15px;
+  }
+
+  /* Dots */
+  .carousel-dots {
+    bottom: 20px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .service-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-text p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/*768 
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 25px 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 20px 20px;
+  }
+
+  nav img {
+    width: 90px;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-user-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-user-info a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .nav-user-info img {
+    width: 24px;
+  }
+
+  .carousel-container {
+    height: 90vh;
+    padding: 0 30px;
+  }
+
+  .slide-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .text-content {
+    max-width: 50%;
+  }
+
+  .image-content {
+    max-width: 45%;
+  }
+
+  .main-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: #222;
+  }
+
+  .season-text {
+    font-size: 1.6rem;
+    color: #444;
+  }
+
+  .discount-text {
+    font-size: 1.2rem;
+    color: #777;
+  }
+
+  .button-group {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .carousel-arrow {
+    width: 44px;
+    height: 44px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-arrow:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: scale(1.05);
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+} */

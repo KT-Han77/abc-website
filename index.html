@@ -3,56 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Fashion</title>
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/media-query/desktop-first.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- nav -->
-       <nav>
-            <a href="/" class="logo">
-                <img src="icons/logo.svg" width="40" alt="">
-                <span><span class="a">A</span><span class="b">B</span><span class="c">C</span> <strong class="logo-design">Fashion</strong></span>
-            </a>
-            <ul class="nav-items">
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <ul class="social-links">
-                <li>
-                    <a href=""><img src="icons/facebook.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="icons/instagram.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="icons/twitter.svg" alt=""></a>
-                </li>
-            </ul>
+    <!--nav bar start-->
+    <nav>
+      <img src="photo/aiikii.png" alt="">
+      
+      <ul class="nav-item">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
 
-            <img src="./icons/menu.svg" class="menu-icon"  alt="">
-       </nav>
-       <!-- end nav bar -->
-
-       <!-- hero section -->
-        <div class="hero-section">
-            <div class="circle circle2"></div>
-            <div class="circle circle3"></div>
-            <div class="circle circle4"></div>
-            <div class="circle circle1"></div>
-            <div class="hero-content"></div>
-        </div>
-       <!-- end hero section--> 
-    </header>
-    <main>
+      <ul class="nav-item">
+        <li><a href="">New Arrival</a></li>
+        <li><a href="">Match Your Moments</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">Kids</a></li>
+      </ul>
         
-    </main>
-    <footer></footer>
+      <ul class="nav-item nav-user-info">
+        <li><a href=""><img src="icon/cart.svg" alt=""><span>Cart</span></a></li>
+        <li><a href=""><img src="icon/user.svg" alt=""><span>My Profile</span></a></li>
+        <li><a href=""><img src="icon/logout.svg" alt=""><span>Log Out</span></a></li>
+      </ul>
+     
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- carousel start-->
+    <div class="fashion-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">Season Sale</h3>
+                <h1 class="main-title">MEN'S FASHION</h1>
+                <p class="discount-text">Min. 35-70% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photo/c-1.png" alt="Men's Fashion Model">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">Summer Collection</h3>
+                <h1 class="main-title">WOMEN'S STYLE</h1>
+                <p class="discount-text">Up to 60% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photo/c-2.png" alt="Women's Fashion Model">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">New Arrivals</h3>
+                <h1 class="main-title">ACCESSORIES</h1>
+                <p class="discount-text">Min. 25-50% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photo/c-3.png" alt="Fashion Accessories">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-arrow prev-arrow" onclick="prevSlide()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15,18 9,12 15,6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-arrow next-arrow" onclick="nextSlide()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9,18 15,12 9,6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- service -->
+    <div class="service">
+      <div class="service-container">
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="icon/trust.svg" alt="">
+          </div>
+          <div class="service-text">
+            <h3>Quality Products</h3>
+          <p>We ensure the best quality for our customers.</p>
+          </div>         
+        </div>
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="icon/secure.svg" alt="">
+          </div>
+          <div class="service-text">
+            <h3>Secure Payment</h3>
+          <p>Your payment information is safe with us.</p>
+          </div>          
+        </div>
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="icon/shipping.svg" alt="">
+          </div>
+          <div class="service-text">
+            <h3>Free Shipping</h3>
+          <p>On orders over 2 lakh.</p>
+          </div>          
+        </div>
+        
+        <div class="service-item">
+          <div class="service-image">
+            <img src="icon/support.svg" alt="">
+          </div>
+          <div class="service-text">
+            <h3>24/7 Support</h3>
+          <p>We're here to help you anytime.</p>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+    <!-- service end-->
 </body>
 </html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Fashion</title>
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media-query/desktop-first.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- nav -->
+    <nav>
+      <a href="/" class="logo">
+        <img src="icons/logo.svg" width="40" alt="">
+        <span><span class="a">A</span><span class="b">B</span><span class="c">C</span> <strong
+            class="logo-design">Fashion</strong></span>
+      </a>
+      <ul class="nav-items">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href=""><img src="icons/facebook.svg" alt=""></a>
+        </li>
+        <li>
+          <a href=""><img src="icons/instagram.svg" alt=""></a>
+        </li>
+        <li>
+          <a href=""><img src="icons/twitter.svg" alt=""></a>
+        </li>
+      </ul>
+
+      <img src="./icons/menu.svg" class="menu-icon" alt="">
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- hero section -->
+    <!-- <div class="hero-section">
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle1"></div>
+            <div class="hero-content"></div>
+        </div> -->
+    <!-- end hero section-->
+
+    <!-- carousel start-->
+    <div class="fashion-carousel">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">Season Sale</h3>
+                <h1 class="main-title">MEN'S FASHION</h1>
+                <p class="discount-text">Min. 35-70% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photos/1.webp" alt="Men's Fashion Model">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">Summer Collection</h3>
+                <h1 class="main-title">WOMEN'S STYLE</h1>
+                <p class="discount-text">Up to 60% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photos/10.webp" alt="Women's Fashion Model">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="slide-content">
+              <div class="text-content">
+                <h3 class="season-text">New Arrivals</h3>
+                <h1 class="main-title">ACCESSORIES</h1>
+                <p class="discount-text">Min. 25-50% Off</p>
+                <div class="button-group">
+                  <button class="btn btn-primary">SHOP NOW</button>
+                  <button class="btn btn-secondary">READ MORE</button>
+                </div>
+              </div>
+              <div class="image-content">
+                <img src="photos/13.webp" alt="Fashion Accessories">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-arrow prev-arrow" onclick="prevSlide()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15,18 9,12 15,6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-arrow next-arrow" onclick="nextSlide()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9,18 15,12 9,6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+  </header>
+  <main>
+
+    <!-- service item start-->
+    <section class="service-section">
+      <div class="service">
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="photos/1.webp" alt="Free Shipping">
+          </div>
+          <div class="service-text">
+            <p>Free Shipping</p>
+            <p>On all orders over $99</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="photos/10.webp" alt="Secure Payment">
+          </div>
+          <div class="service-text">
+            <p>Secure Payment</p>
+            <p>We ensure secure payment</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="photos/2.webp" alt="100% Money Back">
+          </div>
+          <div class="service-text">
+            <p>100% Money Back</p>
+            <p>30 Days Return Policy</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-image">
+            <img src="photos/3.webp" alt="Online Support">
+          </div>
+          <div class="service-text">
+            <p>Online Support</p>
+            <p>24/7 Dedicated Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service item end-->
+
+    <!-- discount -->
+     <section class="discount-section">
+      <div class="discount-left">
+        <div class="discount-content">
+          <h2 class="discount-title">Exclusive Offer</h2>
+          <p class="discount-description">Get an additional 20% off on your first purchase. Use code: <strong>ABC20</strong></p>
+          <button class="btn btn-discount">Claim Offer</button>
+        </div>
+      </div>
+
+      <div class="discount-right">
+
+      </div>
+
+     </section>
+
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
