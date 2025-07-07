@@ -245,6 +245,11 @@ nav img:hover {
   background-color: var(--black);
   color: var(--white);
   transform: translateY(-50%) scale(1.1);
+  box-shadow: 0px 0px 10px 10px #ffffffba;
+}
+
+.carousel-arrow:hover svg {
+  stroke: var(--white);     /* svg color ကို browser တိုင်းမှာမှန်အောင်*/
 }
 
 /* Dots Indicator */
